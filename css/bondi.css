@@ -181,6 +181,9 @@ body {
 .newsletter .newsletter-btn {
   background-color: var(--dark-color);
 }
+.newsletter .newsletter-btn:hover {
+  color: white;
+}
 /* End Newsletter */
 /* Start Footer */
 .footer {
