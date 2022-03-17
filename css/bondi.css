@@ -1,0 +1,222 @@
+:root {
+  --dark-color: #19283f;
+  --green-color: #33d1cc;
+  --red-color: #ff3150;
+  --yellow-color: #ffc400;
+  --section-color: #eff7fa;
+}
+body {
+  font-family: "Roboto", sans-serif;
+}
+/* Start Scroll To Top*/
+.scroll {
+  background-color: var(--dark-color);
+  width: 35px;
+  height: 35px;
+  bottom: 25px;
+  right: 25px;
+  position: fixed;
+  z-index: 1000;
+  text-align: center;
+  transition: 0.5s;
+  border: none;
+  cursor: pointer;
+  color: var(--yellow-color);
+  font-size: 20px;
+  display: none;
+}
+.scroll:hover {
+  background: linear-gradient(to left, var(--red-color) 50%, var(--dark-color) 50%) no-repeat scroll right bottom/210% 100% #0075ff;
+}
+/* End Scroll To Top */
+.btn-main {
+  background-color: var(--red-color);
+  color: var(--yellow-color);
+  padding: 0.5rem 1rem;
+}
+.btn-main:hover {
+  color: var(--dark-color);
+}
+
+/* Start Header */
+.navbar {
+  background-color: var(--dark-color);
+}
+.navbar .navbar-nav a {
+  color: white;
+  cursor: pointer;
+}
+.navbar .navbar-nav .active,
+.navbar .navbar-nav a:hover,
+.navbar .navbar-nav a:focus {
+  color: var(--green-color);
+}
+
+.navbar svg {
+  color: var(--green-color);
+}
+.navbar .fa-magnifying-glass {
+  border-left: 1px solid var(--green-color);
+  font-size: 1rem;
+}
+/* End Header */
+/* Start Loading */
+.landing {
+  background-color: var(--dark-color);
+  height: calc(100vh - 70px);
+}
+/* End Loading */
+.main-title::after {
+  content: "";
+  width: 120px;
+  height: 2px;
+  position: absolute;
+  background-color: var(--green-color);
+  bottom: -20px;
+  left: 50%;
+  transform: translateX(-50%);
+  position: absolute;
+}
+/* Start Services */
+.icon-box {
+  height: 200px;
+}
+.number {
+  font-size: 12rem;
+  color: var(--section-color);
+}
+.icon {
+  font-size: 4rem;
+  color: var(--green-color);
+}
+.services .title-box {
+  color: var(--yellow-color);
+}
+/* End Services */
+/* Start Portfolio */
+.portfolio {
+  background-color: var(--section-color);
+}
+.portfolio ul li {
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+}
+.portfolio ul li:hover {
+  color: var(--red-color);
+}
+.portfolio .active {
+  background-color: var(--red-color);
+  color: var(--yellow-color);
+  padding: 0.5rem 1rem;
+}
+.portfolio .box {
+  padding: 5px;
+  background-color: white;
+  position: relative;
+  user-select: none;
+  overflow: hidden;
+}
+.portfolio .box::before {
+  content: attr(data-work);
+  position: absolute;
+  background-color: #33d1cc98;
+  height: calc(100% - 10px);
+  width: calc(100% - 10px);
+  text-align: center;
+  font-size: 2rem;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transform: translateX(calc(-100% - 5px));
+  transition: 0.3s;
+}
+.portfolio .box:hover::before {
+  transform: translateX(0);
+}
+/* End Portfolio */
+/* Start About */
+.about .description {
+  max-width: 500px;
+}
+/* End About */
+/* Start Team */
+.team {
+  background-color: var(--section-color);
+  padding-top: 120px;
+}
+.team h2 {
+  color: var(--yellow-color);
+  font-weight: bold;
+  display: block;
+}
+
+/* End Team */
+/* Start Techs */
+.techs img {
+  max-width: 100%;
+  padding-left: 100px;
+}
+/* End Techs */
+
+/* Start Start Project */
+.project {
+  background-color: var(--dark-color);
+}
+/* End Start Project */
+/* Start Newsletter */
+.newsletter {
+  background-color: var(--yellow-color);
+}
+.newsletter .email,
+.newsletter .email:focus {
+  border: none;
+  border-bottom: 2px solid white;
+  outline: none;
+  width: 100%;
+}
+.newsletter h5 {
+  font-weight: bold;
+}
+.newsletter .newsletter-btn {
+  background-color: var(--dark-color);
+}
+/* End Newsletter */
+/* Start Footer */
+.footer {
+  background-color: var(--dark-color);
+}
+.footer .links ul li,
+.footer .about ul li {
+  padding: 0.5rem 0;
+  cursor: pointer;
+}
+.footer ul li a {
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.5);
+}
+.footer ul li a:hover {
+  color: var(--red-color);
+}
+.footer .social svg {
+  color: white;
+  font-size: 1rem;
+  width: 20px;
+  height: 20px;
+}
+.footer .social li {
+  padding: 0 0.5rem;
+}
+.footer .social .fa-facebook {
+  background-color: #1877f2;
+}
+.footer .social .fa-twitter {
+  background-color: #1da1f2;
+}
+.footer .social .fa-linkedin {
+  background-color: #0077b5;
+}
+.footer .social .fa-youtube {
+  background-color: #ff0000;
+}
+/* End Footer */
